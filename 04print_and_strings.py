@@ -1,7 +1,7 @@
 # print_and_strings.py
 
-name = "Shreya"
-score = 96.4
+robot_name = "BonicBot"
+task_score = 96.4
 
 # Basic print
 print("Result ready.")
@@ -10,16 +10,16 @@ print("Result ready.")
 print("a", "b", "c", sep=" - ", end="!\n")
 
 # f-strings (the modern, recommended approach)
-print(f"{name} scored {score:.1f}%")
+print(f"{robot_name} completed the task with a score of {task_score:.1f}%")
 
 # .format() method (common in older codebases)
-print("{} scored {:.1f}%".format(name, score))
+print("{} completed the task with a score of {:.1f}%".format(robot_name, task_score))
 
 # %-style formatting (legacy, still seen in older Python code)
-print("%s scored %.1f%%" % (name, score))
+print("%s completed the task with a score of %.1f%%" % (robot_name, task_score))
 
 # String operations
-greeting = "Hello" + ", " + name + "!"
+greeting = "Hello" + ", " + robot_name + "!"
 
 print(greeting.upper())
 print(greeting.lower())

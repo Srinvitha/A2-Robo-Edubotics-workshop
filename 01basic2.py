@@ -1,9 +1,9 @@
-name = "BonicBot" 
-age = 2 
-height = 0.80 
-is_robot = True 
+robot_name = "BonicBot" 
+build_year = 2026 
+robot_height = 0.80 
+is_active = True 
  
-print(name) 
-print(age) 
-print(height) 
-print(is_robot) 
+print(robot_name) 
+print(build_year) 
+print(robot_height) 
+print(is_active)  

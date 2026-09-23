@@ -1,27 +1,27 @@
 # conditionals.py
 
-score = 82
+battery_level = 82
 
-if score >= 90:
-    grade = "A"
-elif score >= 75:
-    grade = "B"
-elif score >= 60:
-    grade = "C"
+if battery_level >= 90:
+    status = "Excellent"
+elif battery_level >= 75:
+    status = "Good"
+elif battery_level >= 60:
+    status = "Low"
 else:
-    grade = "F"
+    status = "Critical"
 
-print(f"Score: {score} -> Grade: {grade}")
+print(f"Battery: {battery_level}% -> Status: {status}")
 
 # Comparison and logical operators
-temperature_c = 5
-is_raining = True
+motor_temperature = 5
+obstacle_detected = True
 
-if temperature_c < 10 and is_raining:
-    print("Wear a warm, waterproof jacket.")
-elif temperature_c < 10:
-    print("Wear a warm jacket.")
-elif is_raining:
-    print("Bring an umbrella.")
+if motor_temperature < 10 and obstacle_detected:
+    print("Obstacle detected. Stop movement.")
+elif motor_temperature < 10:
+    print("Motor temperature is low.")
+elif obstacle_detected:
+    print("Obstacle detected.")
 else:
-    print("No jacket needed.")
+    print("Movement is safe.")

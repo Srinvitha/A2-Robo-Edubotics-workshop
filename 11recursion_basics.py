@@ -10,7 +10,7 @@ print(factorial(5))
 
 def countdown(n):
     if n <= 0:
-        print("Liftoff!")
+        print("BonicBot ready!")
         return
 
     print(n)
@@ -24,4 +24,5 @@ def sum_list(numbers):
 
     return numbers[0] + sum_list(numbers[1:])
 
-print(sum_list([4, 8, 15, 16, 23]))
+task_scores = [4, 8, 15, 16, 23]
+print(sum_list(task_scores))

@@ -15,13 +15,13 @@ def safe_divide(a, b):
     finally:
         print("Division attempt finished.")
 
-print(safe_divide(10, 2))
-print(safe_divide(10, 0))
+print(safe_divide(85, 2))
+print(safe_divide(85, 0))
 
 # Catching a specific exception type across a loop
-values = ["12", "abc", "7"]
+sensor_readings = ["12", "abc", "7"]
 
-for value in values:
+for value in sensor_readings:
     try:
         number = int(value)
         print(f"Converted: {number}")

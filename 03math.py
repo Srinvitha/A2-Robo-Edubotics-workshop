@@ -1,15 +1,15 @@
 # math_operations.py
 
-a = 17
-b = 5
+motor_power = 17
+movement_steps = 5
 
-print("Addition:", a + b)
-print("Subtraction:", a - b)
-print("Multiplication:", a * b)
-print("True Division:", a / b)
-print("Floor Division:", a // b)
-print("Modulus (remainder):", a % b)
-print("Exponent:", a ** b)
+print("Addition:", motor_power + movement_steps)
+print("Subtraction:", motor_power - movement_steps)
+print("Multiplication:", motor_power * movement_steps)
+print("True Division:", motor_power / movement_steps)
+print("Floor Division:", motor_power // movement_steps)
+print("Modulus (remainder):", motor_power % movement_steps)
+print("Exponent:", motor_power ** movement_steps)
 
 # Operator precedence
 # PEMDAS: Parentheses, Exponents, Mult/Div, Add/Sub

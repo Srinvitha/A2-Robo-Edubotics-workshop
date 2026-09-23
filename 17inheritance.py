@@ -1,25 +1,25 @@
-class Animal:
+class Robot:
     def __init__(self, name):
         self.name = name
 
-    def speak(self):
-        return f"{self.name} makes a sound."
+    def action(self):
+        return f"{self.name} performs an action."
 
-class Dog(Animal):
-    def speak(self):
-        return f"{self.name} says Woof!"
+class HumanoidRobot(Robot):
+    def action(self):
+        return f"{self.name} waves its hand."
 
-class Cat(Animal):
-    def speak(self):
-        return f"{self.name} says Meow!"
+class ServiceRobot(Robot):
+    def action(self):
+        return f"{self.name} performs a service task."
 
-animals = [
-    Dog("Rex"),
-    Cat("Whiskers"),
-    Animal("Generic Creature")
+robots = [
+    HumanoidRobot("BonicBot"),
+    ServiceRobot("ServiceBot"),
+    Robot("Generic Robot")
 ]
 
-for animal in animals:
-    print(animal.speak())
+for robot in robots:
+    print(robot.action())
 
-print(isinstance(Dog("Rex"), Animal))
+print(isinstance(HumanoidRobot("BonicBot"), Robot))

@@ -1,24 +1,24 @@
 # file_basics.py
 
-names = ["Aditi", "Rahul", "Meera"]
+robot_logs = ["startup complete", "obstacle detected", "returning to base"]
 
-with open("students.txt", "w") as f:
-    for name in names:
-        f.write(name + "\n")
+with open("robot_log.txt", "w") as f:
+    for log_entry in robot_logs:
+        f.write(log_entry + "\n")
 
-with open("students.txt", "r") as f:
+with open("robot_log.txt", "r") as f:
     content = f.read()
 
 print(content)
 
-with open("students.txt", "r") as f:
+with open("robot_log.txt", "r") as f:
     for line in f:
-        print(f"Student: {line.strip()}")
+        print(f"Robot log: {line.strip()}")
 
-with open("students.txt", "a") as f:
-    f.write("Kabir\n")
+with open("robot_log.txt", "a") as f:
+    f.write("shutdown complete\n")
 
-with open("students.txt", "r") as f:
+with open("robot_log.txt", "r") as f:
     all_lines = f.readlines()
 
 print(all_lines)

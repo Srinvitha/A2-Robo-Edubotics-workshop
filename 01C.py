@@ -3,7 +3,7 @@
 import sys
 import platform
 
-print("Hello, Python!")
+print("Hello, BonicBot!")
 
 print(
     f"You're running Python "

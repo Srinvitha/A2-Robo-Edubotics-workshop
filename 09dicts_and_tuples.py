@@ -1,32 +1,32 @@
 # dicts_and_tuples.py
 
-student = {
-    "name": "Aditi",
-    "age": 24,
-    "scores": [82, 91, 76],
+robot = {
+    "name": "BonicBot",
+    "battery": 82,
+    "steps": [10, 90, 1],
 }
 
-print(student["name"])
-print(student.get("email", "not provided"))
+print(robot["name"])
+print(robot.get("mode", "not provided"))
 
-student["email"] = "aditi@example.com"
-student["age"] = 25
+robot["mode"] = "Autonomous"
+robot["battery"] = 85
 
-print(student)
+print(robot)
 
-for key, value in student.items():
+for key, value in robot.items():
     print(f"{key}: {value}")
 
 # Tuples: fixed, ordered, immutable groupings
-point = (3, 4)
+position = (3, 4)
 
-x, y = point
+x, y = position
 
-print(f"x={x}, y={y}")
+print(f"Robot position: x={x}, y={y}")
 
-# point[0] = 10  # would raise TypeError
+# position[0] = 10  # would raise TypeError
 
-coordinates = [(0, 0), (3, 4), (-1, 2)]
+positions = [(0, 0), (3, 4), (-1, 2)]
 
-for px, py in coordinates:
-    print(f"Point: ({px}, {py})")
+for px, py in positions:
+    print(f"Robot position: ({px}, {py})")

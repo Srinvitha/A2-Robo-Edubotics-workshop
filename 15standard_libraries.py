@@ -1,19 +1,19 @@
 import random
 from datetime import datetime
 
-# random
-dice_roll = random.randint(1, 6)
-print(f"Dice roll: {dice_roll}")
+# random movement
+movement_steps = random.randint(1, 6)
+print(f"Random movement steps: {movement_steps}")
 
-colors = ["red", "green", "blue", "yellow"]
+directions = ["forward", "backward", "left", "right"]
 
-chosen_color = random.choice(colors)
-print(f"Chosen color: {chosen_color}")
+chosen_direction = random.choice(directions)
+print(f"Chosen direction: {chosen_direction}")
 
-shuffled = colors.copy()
+shuffled = directions.copy()
 random.shuffle(shuffled)
 
-print(f"Shuffled: {shuffled}")
+print(f"Random direction sequence: {shuffled}")
 
 # datetime
 now = datetime.now()

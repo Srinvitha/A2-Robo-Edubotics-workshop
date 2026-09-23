@@ -1,21 +1,21 @@
-class Student:
-    def __init__(self, name, scores):
+class Robot:
+    def __init__(self, name, battery_levels):
         self.name = name
-        self.scores = scores
+        self.battery_levels = battery_levels
 
-    def average(self):
-        return sum(self.scores) / len(self.scores)
+    def average_battery(self):
+        return sum(self.battery_levels) / len(self.battery_levels)
 
     def summary(self):
-        return f"{self.name}: average {self.average():.1f}"
+        return f"{self.name}: average battery {self.average_battery():.1f}%"
 
-aditi = Student("Aditi", [82, 91, 76])
-rahul = Student("Rahul", [70, 65, 80])
+bonicbot = Robot("BonicBot", [82, 91, 76])
+robot_a2 = Robot("Robot A2", [70, 65, 80])
 
-print(aditi.summary())
-print(rahul.summary())
+print(bonicbot.summary())
+print(robot_a2.summary())
 
-students = [aditi, rahul]
+robots = [bonicbot, robot_a2]
 
-for student in students:
-    print(student.name, student.average())
+for robot in robots:
+    print(robot.name, robot.average_battery())

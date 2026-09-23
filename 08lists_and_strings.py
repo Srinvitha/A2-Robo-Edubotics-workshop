@@ -1,35 +1,35 @@
 # lists_and_strings.py
 
-students = ["Aditi", "Rahul", "Meera"]
-scores = [82, 91, 76]
+robot_actions = ["walk", "turn", "wave"]
+action_steps = [10, 90, 1]
 
-print(students[0], scores[0])  # indexing
-print(students[-1])            # negative indexing
-print(students[0:2])           # slicing
+print(robot_actions[0], action_steps[0])  # indexing
+print(robot_actions[-1])                 # negative indexing
+print(robot_actions[0:2])               # slicing
 
-students.append("Kabir")
-scores.append(88)
+robot_actions.append("handshake")
+action_steps.append(2)
 
-print(students, scores)
-print("Number of students:", len(students))
+print(robot_actions, action_steps)
+print("Number of actions:", len(robot_actions))
 
 # pairing list data with zip + a for loop
-for name, score in zip(students, scores):
-    print(f"{name}: {score}")
+for action, steps in zip(robot_actions, action_steps):
+    print(f"{action}: {steps} steps")
 
 # basic string manipulation
-report_line = "Aditi,82,Pass"
+robot_status = "BonicBot,82,Ready"
 
-parts = report_line.split(",")
+parts = robot_status.split(",")
 
 print(parts)
 
-name, score_text, status = parts
+robot_name, battery_text, status = parts
 
-summary = f"{name.upper()} scored {score_text} — {status}"
+summary = f"{robot_name.upper()} battery {battery_text}% - {status}"
 
 print(summary)
 
-names_joined = ", ".join(students)
+actions_joined = ", ".join(robot_actions)
 
-print("Class roster:", names_joined)
+print("Action sequence:", actions_joined)

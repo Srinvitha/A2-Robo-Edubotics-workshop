@@ -1,9 +1,9 @@
-name = "Aditi"
-age = 24
+robot_name = "BonicBot"
+startup_year = 2026
 
-weight_kg = float(input("Enter your weight in kg: "))
+robot_height = float(input("Enter the robot height in metres: "))
 
 print(
-    f"{name} is {age} years old and weighs "
-    f"{weight_kg:.1f} kg."
+    f"{robot_name} started in {startup_year} and is "
+    f"{robot_height:.2f} metres tall."
 )

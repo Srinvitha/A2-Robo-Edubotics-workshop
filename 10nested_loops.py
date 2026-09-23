@@ -1,25 +1,25 @@
 # nested_loops.py
 
-# multiplication table (3x3)
-for i in range(1, 4):
-    for j in range(1, 4):
-        print(f"{i} x {j} = {i * j}")
+# movement steps
+for direction in range(1, 4):
+    for step in range(1, 4):
+        print(f"Direction {direction}, Step {step}")
 
 print("---")
 
-# grid search: find coordinates where a value exceeds a threshold
+# environment grid: find coordinates containing an obstacle
 grid = [
-    [3, 8, 2],
-    [7, 1, 9],
-    [4, 6, 5],
+    [0, 1, 0],
+    [1, 0, 1],
+    [0, 1, 0],
 ]
 
-threshold = 6
+threshold = 0
 
 for row_index, row in enumerate(grid):
     for col_index, value in enumerate(row):
         if value > threshold:
             print(
                 f"({row_index},{col_index}) = "
-                f"{value} exceeds threshold"
+                "Obstacle detected"
             )

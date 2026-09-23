@@ -1,22 +1,22 @@
 # variables_and_io.py 
   
 # Variables and core data types 
-name = "Srinvitha"          # str 
-age = 20                # int 
-height_m = 1.63         # float 
-is_student = True       # bool 
+robot_name = "BonicBot"       # str 
+build_year = 2026              # int 
+robot_height = 0.80            # float 
+is_active = True               # bool 
   
-print(name, age, height_m, is_student) 
-print(type(name), type(age), type(height_m), type(is_student)) 
+print(robot_name, build_year, robot_height, is_active) 
+print(type(robot_name), type(build_year), type(robot_height), type(is_active)) 
   
 # Taking input from the user 
-favorite_color = input("What's your favorite color? ") 
-print(f"{name} likes {favorite_color}.") 
+led_color = input("What LED color should the robot use? ") 
+print(f"{robot_name} will use {led_color} LEDs.") 
   
 # input() always returns a string — even when the user types digits 
-birth_year_text = input("What year were you born? ") 
-birth_year = int(birth_year_text)   # convert str -> int 
+startup_year_text = input("What year was the robot built? ") 
+startup_year = int(startup_year_text)   # convert str -> int 
 current_year = 2026 
-approx_age = current_year - birth_year 
+years_in_service = current_year - startup_year 
   
-print(f"You're approximately {approx_age} years old.")
+print(f"{robot_name} has been in service for approximately {years_in_service} years.")

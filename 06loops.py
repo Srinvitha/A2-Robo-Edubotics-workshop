@@ -1,30 +1,30 @@
 # loops.py
 
 # for loop over a range
-for i in range(5):
-    print(f"Count: {i}")
+for step in range(5):
+    print(f"Movement step: {step}")
 
 # for loop over a list
-fruits = ["apple", "banana", "cherry"]
+robot_actions = ["walk", "turn", "wave"]
 
-for fruit in fruits:
-    print(f"I like {fruit}")
+for action in robot_actions:
+    print(f"Executing: {action}")
 
 # while loop with a counter
-countdown = 3
+startup_countdown = 3
 
-while countdown > 0:
-    print(f"Launching in {countdown}...")
-    countdown -= 1
+while startup_countdown > 0:
+    print(f"Robot starting in {startup_countdown}...")
+    startup_countdown -= 1
 
-print("Liftoff!")
+print("BonicBot ready!")
 
 # break and continue
-for n in range(10):
-    if n == 3:
+for step in range(10):
+    if step == 3:
         continue  # skip this iteration
 
-    if n == 6:
+    if step == 6:
         break  # stop the loop entirely
 
-    print("n =", n)
+    print("Step =", step)
