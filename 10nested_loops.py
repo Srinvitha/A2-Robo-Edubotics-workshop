@@ -14,7 +14,7 @@ grid = [
     [0, 1, 0],
 ]
 
-threshold = 0
+threshold = 0 # any value greater than this is considered an obstacle
 
 for row_index, row in enumerate(grid):
     for col_index, value in enumerate(row):
