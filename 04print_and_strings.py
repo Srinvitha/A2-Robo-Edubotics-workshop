@@ -1,7 +1,7 @@
 # print_and_strings.py
 
-name = "Rahul"
-score = 91.5
+name = "Shreya"
+score = 96.4
 
 # Basic print
 print("Result ready.")

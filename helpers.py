@@ -1,6 +1,7 @@
 # helpers.py
 # a module: just function definitions, nothing runs on its own
-
+# 12) MODULES AND CODE REUSABILITY:  
+# CREATE FIRST MODULE =>
 def is_prime(n):
     if n < 2:
         return False
