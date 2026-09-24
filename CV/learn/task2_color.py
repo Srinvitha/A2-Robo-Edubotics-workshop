@@ -12,15 +12,15 @@ while True:
     # Convert BGR → HSV
     hsv = cv2.cvtColor(frame, cv2.COLOR_BGR2HSV)
 
-    # RED color range
-    lower_red = np.array([0, 120, 70])
-    upper_red = np.array([10, 255, 255])
+    # BLUE color range
+    lower_blue = np.array([100, 120, 70])
+    upper_blue = np.array([140, 255, 255])
 
     # Create mask
     mask = cv2.inRange(
         hsv,
-        lower_red,
-        upper_red
+        lower_blue,
+        upper_blue
     )
 
     # Find contours
@@ -48,7 +48,7 @@ while True:
 
             cv2.putText(
                 frame,
-                "Red Object",
+                "Blue Object",
                 (x, y - 10),
                 cv2.FONT_HERSHEY_SIMPLEX,
                 0.7,
